@@ -3,7 +3,7 @@ class Admin::DashboardController < ApplicationController
   def show
     @products_count = Product.count
     @categories_count = Category.count
-    @products_per_category = Category.select(:id, :name).distinct.map do |category|
+    @products_per_category = Category.order(name: :asc).select(:id, :name).distinct.map do |category|
       {id: category[:id], name: category[:name], count: category.products.count}
   end
 end
