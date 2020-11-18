@@ -10,4 +10,9 @@ class Product < ActiveRecord::Base
   validates :quantity, presence: true
   validates :category, presence: true
 
+  def soldOut?
+    self.quantity == 0
+  end
+
+
 end
