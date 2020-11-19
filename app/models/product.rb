@@ -14,5 +14,4 @@ class Product < ActiveRecord::Base
     self.quantity == 0
   end
 
-
 end

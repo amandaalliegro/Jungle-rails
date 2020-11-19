@@ -34,7 +34,7 @@ RSpec.feature "Visitor can add products to cart", type: :feature, js: true do
 
     # VERIFY
     expect(page).to have_content('My Cart (1)')
-
+    
   end
 
 end

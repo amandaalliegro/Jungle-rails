@@ -13,11 +13,11 @@
     <tbody>
       <tr>
         <td><%= link_to 'Categories', admin_categories_path %></td>
-        <td><%= @products_count %></td>
+        <td><%= @categories_count %></td>
       </tr>
       <tr>
-        <td>Categories</td>
-        <td><%= @categories_count %></td>
+        <td><%= link_to 'Products', admin_products_path %></td>
+        <td><%= @products_count %></td>
       </tr>
     </tbody>
   </table>

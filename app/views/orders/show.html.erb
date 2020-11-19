@@ -21,7 +21,7 @@
         </tr>
       </thead>
       <tbody>
-        <% @items.each do |item| %>
+        <% order_items.each do |item| %>
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
       </tbody>
@@ -31,7 +31,7 @@
             TOTAL:
           </th>
           <th>
-            <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
+            <%= humanized_money_with_symbol order_total_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>

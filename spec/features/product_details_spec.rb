@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature "Visitor navigates from home page to product detail page", type: :feature, js: true do
-
+ 
   # SETUP
   before :each do
     @category = Category.create! name: 'Apparel'
@@ -16,6 +16,7 @@ RSpec.feature "Visitor navigates from home page to product detail page", type: :
       )
     end
   end
+
   scenario "They see the product detail" do
     # ACT
     visit root_path
@@ -26,12 +27,13 @@ RSpec.feature "Visitor navigates from home page to product detail page", type: :
 
     # Click on the first link with 'Details' as content
     # first(:link, 'Details').click
-
+    
     # Click on the first product link
     # first('header > a').click
 
     # Click on the header link that links to products/3
     find("header > a[href='/products/3']").trigger("click")
+    
 
     # commented out b/c it's for debugging only (add sleep to wait a new page to be rendered)
     # sleep 1
