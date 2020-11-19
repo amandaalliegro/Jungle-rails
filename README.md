@@ -1,7 +1,19 @@
 # Jungle
+This project was developed as part of Lighthouse Labs' Web Development Bootcamp program.
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+
+## Final Product:
+![about us](https://github.com/amandaalliegro/Jungle-rails/blob/master/docs/about-us.png?raw=true)
+
+![sign up](https://github.com/amandaalliegro/Jungle-rails/blob/master/docs/signup-form.png?raw=true)
+
+![about us](https://github.com/amandaalliegro/Jungle-rails/blob/master/docs/new-product.png?raw=true)
+
+![admin page](https://github.com/amandaalliegro/Jungle-rails/blob/master/docs/admin-products.png?raw=true)
+
+![dashboard](https://github.com/amandaalliegro/Jungle-rails/blob/master/docs/admin-dashboard.png?raw=true)
 
 ## Setup
 
